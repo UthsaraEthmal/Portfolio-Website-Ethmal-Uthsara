@@ -1,0 +1,49 @@
+*{
+  padding: 0;
+  margin: 0;
+  color: white;
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+  
+}
+body{
+background-image: radial-gradient(
+  125% 125% at 50% 0%,
+  #000000 0%,        
+  #041562 35%,       
+  #DA1212 75%,   
+  #000000 100%       
+);
+
+background-size: 100% 120%;
+  animation: moveRadial-Main 6s ease-in-out infinite;
+
+
+  /*background: #041562;
+     /* background-image: radial-gradient(
+  125% 125% at 50% 0%,
+  #000000 0%,        
+  #041562 35%,       
+  #DA1212 75%,   
+  #000000 100%       
+)*/
+
+}
+
+@keyframes moveRadial-Main {
+  0% {
+    background-position: 50% 0%;
+  }
+  50% {
+    background-position: 50% 100%;
+  }
+  100% {
+    background-position: 50% 0%;
+  }
+}
+
+
+
+a{
+  text-decoration: none;
+}

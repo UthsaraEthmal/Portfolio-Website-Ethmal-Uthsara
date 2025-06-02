@@ -1,0 +1,125 @@
+/* Footer Styles */
+.footer {
+background: rgba(255, 255, 255, 0.1);
+    color: white;
+  
+    text-align: center;
+  }
+  .footer::before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 3px;
+     background: linear-gradient(to right, #041562  0%, #DA1212  50%, #041562 100%); /* Blue line that starts in the middle */
+    /*background: linear-gradient(to right, #ffffff 0%, #222 50%, #ffffff 100%); /* Blue line that starts in the middle */
+  }
+  .footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    max-width: 1200px;
+    margin: auto;
+    padding: 10px;
+  }
+  
+  .footer-section {
+    flex: 1;
+    min-width: 250px;
+    margin: 10px;
+    margin-right: 50px;
+  }
+  .footer-section1{
+    margin: 5px;
+  }
+
+.footer-section1 ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.footer-section1 li {
+  display: flex;
+  align-items: center;
+}
+
+.footer-section1 a {
+
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.footer-link-text {
+  display: inline-block;
+  transition: transform 0.3s ease;
+}
+
+.footer-section1 li:hover {
+  transform: translateX(8px); /* Move whole line to the right */
+  font-weight: 700;
+}
+ 
+  .footer-section h2, .footer-section h3 {
+    margin-bottom: 10px;
+  }
+  
+  .footer-section ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-section ul li {
+    margin: 5px 0;
+  }
+  
+  .footer-section a {
+    color: lightgray;
+    text-decoration: none;
+  }
+  
+  .footer-section a:hover {
+    color: white;
+  }
+  
+  .social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    
+  }
+
+
+  .iconFooter{margin: 10px;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 20px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 15px;
+  height: 15px;
+   box-shadow: 0 4px 8px black;}
+  
+  .footer-bottom {
+    margin-top: 10px;
+    padding-top: 10px;
+    border-top: 1px solid gray;
+    font-size: 14px;
+  }
+  /* Footer bottom section */
+.footer-bottom {
+    margin-top: 10px;
+    padding-top: 10px;
+    border-top: 1px solid gray;
+    font-size: 14px;
+    font-weight: normal;
+  }
+  .s{
+    margin-top: 100px;
+  }
+

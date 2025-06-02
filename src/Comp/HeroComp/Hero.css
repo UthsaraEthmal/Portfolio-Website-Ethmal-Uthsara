@@ -1,0 +1,183 @@
+.hero-main {
+    height: 100vh;  
+    justify-content: space-between; 
+    padding: 120px;  
+   background-image: radial-gradient(
+  125% 125% at 50% 0%,
+  #000000 0%,       
+  #041562 35%,      
+  #DA1212 70%,       
+  #000000 100%      
+);
+    background-size: 100% 120%;
+  animation: moveRadial 6s ease-in-out infinite;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  
+}
+
+
+
+
+
+@keyframes moveRadial {
+  0% {
+    background-position: 50% 0%;
+  }
+  50% {
+    background-position: 50% 100%;
+  }
+  100% {
+    background-position: 50% 0%;
+  }
+}
+    
+/*
+  border-bottom: 5px solid rgba(255, 255, 255, 0.2);*/
+
+
+  
+.hero-sub-main{
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.hero-sub-main h1{
+  font-size: 70px;
+}
+
+.hero-sub-main h2{
+  font-size: 30px;
+  
+}
+
+
+.button-section{
+ 
+   align-items: center;
+   margin-top: 30px;
+   display: flex;
+}
+.btndiv{
+width: 200px;
+  height: 50px;
+  background: rgba(255, 255, 255, 0.1);
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100px;
+  box-shadow: 0 4px 8px black;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  font-weight: 600;
+  color: white;
+  margin: 10px;
+  
+  /* Add smooth transition for transform */
+  transition: transform 0.3s ease;
+}
+
+.btndiv::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #041562;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.5s ease;
+  z-index: -1;
+}
+
+.btndiv:hover {
+  transform: translateY(-5px); /* Moves button up */
+}
+
+.btndiv:hover::before {
+  transform: scaleX(1);
+}
+
+
+
+.icon {
+  font-size: 24px; /* Adjust icon size */
+  color: white;
+  
+}
+
+.iconclass {
+  margin: 10px;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 20px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 45px;
+  height: 45px;
+   box-shadow: 0 4px 8px black;
+  
+}
+
+.iconclass:hover{
+  animation: animatec 1.5s ease-in-out infinite;
+  transition: border 0.3s ease;
+}
+
+@keyframes animatec {
+  0% {
+    box-shadow: 0 0 0 0 rgba(218, 18, 18, 0.6); /* Red start */
+  }
+  50% {
+    box-shadow: 0 0 5px 10px rgba(218, 18, 18, 0.3); /* Red glow */
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(218, 18, 18, 0); /* Fully transparent */
+  }
+}
+
+.social-icons {
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* 1. Extra Small Devices (Phones - Portrait) */
+@media (max-width: 479px) {
+  .hero-main {
+     height:auto
+  }
+.hero-sub-main h1{
+  font-size: 35px;
+}
+
+.hero-sub-main h2{
+  font-size: 20px;
+  
+}
+
+  .button-section{ 
+  flex-direction: column;
+  margin: 30px;
+  
+}
+ .about-contact-btn {
+  margin-right: 20px; /* Adds space to the right */
+}
+p{
+  font-size: 12px;
+
+}
+}
+/* 2. Small Devices (Phones - Portrait and Landscape) */
+@media (min-width: 480px) and (max-width: 767px) {
+   .hero-main {
+     height:auto
+  }
+}

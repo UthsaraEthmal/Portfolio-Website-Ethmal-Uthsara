@@ -1,0 +1,95 @@
+.Service-main {
+  margin-top: 50px;
+  height: auto;
+ /* background-image: radial-gradient(125% 125% at 50% 0%, #020617 50%, #00abf0);*/
+}
+
+.Service-sub-main-1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding-top: 20px;
+}
+.Service-sub-main-1 h1 {
+  font-size: 50px;
+}
+.Service-sub-main-2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap; /* Allow wrapping to create two lines of cards */
+  padding-top: 50px;
+  padding-bottom: 100px;
+}
+.Service-card {
+  width: 300px;
+  height: 400px;
+  margin: 10px;
+   background: rgba(255, 255, 255, 0.1);
+    border: 2px solid rgba(255, 255, 255, 0.2);
+  /*border-radius: 10px;*/
+  border-top-left-radius: 45px;
+  border-bottom-right-radius: 45px;
+  text-align: center;
+  align-items: center;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  box-sizing: border-box;
+transition: transform 0.3s ease;
+}
+.Service-card:hover {
+  transform: translateY(-10px); /* Moves the card up by 10px */
+  cursor: pointer; /* Optional, to show pointer on hover */
+  border: 2px solid white;
+  box-shadow: 0 4px 8px black;
+ /* background: rgba(255, 255, 255, 0.2);*/
+
+  
+}
+
+.service-icon{
+  justify-content: center;
+    margin: 10px;
+    padding: 15px;
+    border: 2px solid white;
+    font-size: 20px;
+    border-radius: 100px;
+    box-shadow: 0 4px 8px black
+}
+
+.Service-card h3{
+  padding: 25px;
+ 
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .Service-card {
+    flex: 1 1 40%;
+    max-width: 40%;
+  }
+}
+/* 4. Large Devices (Tablets - Landscape / Small Laptops)*/
+@media (min-width: 992px) and (max-width: 1199px) {
+  .Service-main {
+    height: auto;
+  }
+  .Service-card {
+    flex: 1 1 30%;
+    max-width: 30%;
+  }
+}
+/* 5. Extra Large Devices (Desktops) */
+@media (min-width: 1200px) and (max-width: 1399px) {
+}
+
+/* 6. Ultra Wide Screens (Large Desktops, 4K Displays) */
+@media (min-width: 1400px) {
+  .Service-main {
+    height: 100vh;
+  }
+}

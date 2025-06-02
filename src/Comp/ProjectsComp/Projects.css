@@ -1,0 +1,163 @@
+.outer-loop{
+    margin-top: 30px;
+
+}.container {
+       width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+   
+    padding: 20px;
+    min-height: 90vh; /* Ensures it doesn’t cut off content */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+   /* background: rgba(255, 255, 255, 0.1);*/
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+     margin: 50px;
+      box-shadow: 0 8px 16px rgba(0, 6, 8, 0.7);
+}
+
+/* Wrapper for the slider */
+.slider-wrapper {
+    position: relative;
+    width: 100%;
+    max-width: 1200px;
+    padding: 20px;
+    margin: 10px;
+}
+
+/* Card Container (Each Slide) */
+.card-containerp {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 20px;
+}
+
+/* Individual Cards */
+.cardp {
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+  justify-content: center;/* Ensures text is spaced evenly */
+    align-items: center;
+   
+  
+    flex: 1; /* Makes all cards equal height */
+    min-height: 350px; /* Adjust as needed */
+    max-height: 100%;
+    text-align: center;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background: rgba(255, 255, 255, 0.1);
+    border: 2px solid rgba(255, 255, 255, 0.2);
+}
+.cardp h3 {
+  display: inline-block; 
+  border-bottom: 2px solid white; 
+  padding-bottom: 6px; 
+  margin-bottom: 15px; 
+  width: 60%;
+}
+.project-btn{
+    display: flex;
+     width: 100px;
+  height: 30px;
+  align-items: center;
+  justify-content: center;
+     margin: 30px auto;
+    background: rgba(255, 255, 255, 0.1);
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  border-radius: 100px;
+  box-shadow: 0 8px 16px rgba(0, 6, 8, 0.3);
+}
+
+.project-btn:hover {
+  background: rgba(255, 255, 255, 0.3);
+  border-color: white;
+  transform: scale(1.05);
+
+ 
+}
+
+
+.slick-slide > div {
+    padding: 20px; /* Adds spacing between slides */
+    
+}
+/* Card Hover Effect */
+.cardp:hover {
+    /*background-image: radial-gradient(125% 125% at 50% 0%, transparent 50%,#ffffff);*/
+    transform: translateY(-5px);
+    border: 2px solid #ffffff;
+   box-shadow: 0 8px 16px rgba(0, 6, 8, 0.7);
+}
+
+/* Fix Dots Position */
+.slick-dots {
+    bottom: -20px !important;
+}
+
+/* Adjust Dot Sizes */
+.slick-dots li {
+    width: 6px !important;
+    height: 6px !important;
+    margin: 0 3px !important;
+}
+
+/* Default Dot Appearance */
+.slick-dots li button:before {
+    font-size: 6px !important;
+    color: #041562  !important;
+    opacity: 0.7 !important;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Active Dot */
+.slick-dots li.slick-active button:before {
+    font-size: 8px !important;
+    opacity: 1 !important;
+    color: white !important;
+    transform: scale(1.4);
+}
+.slick-list {
+    overflow: hidden; /* Ensures that the hidden parts of the non-center cards aren't visible */
+}
+
+/* 1. Extra Small Devices (Phones - Portrait) */
+@media (max-width: 479px) {
+
+
+
+    
+    .container {
+        height: auto;
+           /* background: rgba(255, 255, 255, 0.1);*/
+    border: none;
+    border-radius: 10px;
+     margin: 50px;
+      box-shadow: 0 8px 16px rgba(255, 255, 255, 0.0);
+        
+    }
+.cardp h3 {
+  font-size: 12px;
+}
+.cardp p{
+    font-size: 10px;
+}
+.project-btn{
+    font-size: 10px;
+     width: 80px;
+  height: 30px;}
+
+
+}
+/* 2. Small Devices (Phones - Portrait and Landscape) */
+@media (min-width: 480px) and (max-width: 767px) {
+    .container {
+        margin: 50px;
+    }
+}
