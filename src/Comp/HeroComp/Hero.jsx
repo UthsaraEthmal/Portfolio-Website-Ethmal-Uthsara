@@ -15,7 +15,7 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 import { motion } from "framer-motion";
 import resume from "../../assets/EuB.pdf";
-import { Link } from "React-router-dom";
+import { Link } from "react-router-dom";
 
 const Hero = () => {
   return (

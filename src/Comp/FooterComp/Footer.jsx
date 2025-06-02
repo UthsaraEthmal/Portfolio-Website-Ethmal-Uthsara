@@ -3,7 +3,7 @@ import "./Footer.css"; // Import the CSS file
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faGithub, faTwitter, faFacebook, faLinkedin,faInstagram}  from "@fortawesome/free-brands-svg-icons";
 import { IoIosArrowForward } from "react-icons/io";
-import {Link}from 'React-router-dom'
+import {Link}from 'react-router-dom'
 
 const Footer = () => {
   return (

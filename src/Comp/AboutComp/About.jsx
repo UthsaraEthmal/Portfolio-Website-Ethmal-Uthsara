@@ -1,7 +1,7 @@
 import React from "react";
 import "./About.css";
 import AboutPic from "../../assets/blue.webp";
-import {Link}from 'React-router-dom'
+import {Link}from 'react-router-dom'
 
 
 const About = () => {

@@ -9,7 +9,8 @@ import Nav from './Comp/NavComp/Nav'
 
 import Footer from './Comp/FooterComp/Footer'
 
-import {Routes,Route}from 'React-router-dom'
+
+import {Routes,Route}from 'react-router-dom'
 import HomePage from './Comp/HomePage'
 
 const App = () => {
