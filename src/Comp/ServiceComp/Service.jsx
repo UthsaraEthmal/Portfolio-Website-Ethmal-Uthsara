@@ -1,8 +1,7 @@
 import React, { useState } from "react";
 import "./Service.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faHouse,
+import {  faHouse,
   faRibbon,
   faEnvelope,
   faLaptopCode,
@@ -11,6 +10,7 @@ import {
   faCode
 } from "@fortawesome/free-solid-svg-icons";
 import { FaLaptopCode } from "react-icons/fa6";
+
 
 const Service = () => {
   return (
