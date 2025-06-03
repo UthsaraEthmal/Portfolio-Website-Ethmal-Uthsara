@@ -158,6 +158,7 @@ flex-direction: column;
 .contact-sub-main-2-heading{ font-size: 45px;}
 .Contact-main{
   height: auto;
+  margin-top: -50px;
 }
 
 .contact-card {

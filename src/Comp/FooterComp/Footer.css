@@ -1,8 +1,9 @@
 /* Footer Styles */
 .footer {
 background: rgba(255, 255, 255, 0.1);
+background-image: linear-gradient(43deg, #041562 20%,  #DA1212 100%);
     color: white;
-  
+  margin-top: 50px;
     text-align: center;
   }
   .footer::before {
@@ -10,8 +11,8 @@ background: rgba(255, 255, 255, 0.1);
     display: block;
     width: 100%;
     height: 3px;
-     background: linear-gradient(to right, #041562  0%, #DA1212  50%, #041562 100%); /* Blue line that starts in the middle */
-    /*background: linear-gradient(to right, #ffffff 0%, #222 50%, #ffffff 100%); /* Blue line that starts in the middle */
+    /* background: linear-gradient(to right, #041562  0%, #DA1212  50%, #041562 100%); /* Blue line that starts in the middle */
+    background: linear-gradient(to right, #ffffff 0%, #222 50%, #ffffff 100%); /* Blue line that starts in the middle */
   }
   .footer-container {
     display: flex;

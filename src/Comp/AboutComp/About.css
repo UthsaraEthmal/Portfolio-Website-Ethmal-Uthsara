@@ -129,6 +129,12 @@
     width: 200px;
     height: 200px;
   }
+  .about-content-details {
+
+  justify-content: center;
+  align-items: center;
+ 
+}
   .about-content {
     flex-direction: column;
   }

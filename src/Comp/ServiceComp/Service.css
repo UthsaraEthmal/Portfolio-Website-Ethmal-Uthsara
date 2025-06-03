@@ -20,7 +20,7 @@
   justify-content: center;
   flex-wrap: wrap; /* Allow wrapping to create two lines of cards */
   padding-top: 50px;
-  padding-bottom: 100px;
+  /*padding-bottom: 100px;*/
 }
 .Service-card {
   width: 300px;
