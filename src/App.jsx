@@ -7,7 +7,8 @@ import Contact from './Comp/ContactComp/Contact'
 import Nav from './Comp/NavComp/Nav'
 import Footer from './Comp/FooterComp/Footer'
 import {Routes,Route}from 'react-router-dom'
-import HomePage from './Comp/HomePage'
+import HomePage from './Comp/HomePageComp/HomePage'
+
 
 
 const App = () => {
