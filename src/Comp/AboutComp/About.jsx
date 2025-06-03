@@ -1,6 +1,6 @@
 import React from "react";
 import "./About.css";
-import AboutPic from "../../assets/blue.webp";
+import AboutPic from "../../assets/red_pic.jpg";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 
