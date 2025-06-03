@@ -48,6 +48,7 @@ const Service = () => {
         <h1>Services</h1>
       </div>
       <motion.div className="Service-sub-main-2" variants={container}>
+
         <motion.div className="Service-card" variants={container}>
           <MotionIcon
             icon={faLaptopCode}
@@ -61,7 +62,7 @@ const Service = () => {
           </p>
         </motion.div>
 
-        <motion.div className="Service-card" variants={item}>
+        <motion.div className="Service-card" variants={container}>
           <MotionIcon
             icon={faMobileScreen}
             className="service-icon"
@@ -75,7 +76,7 @@ const Service = () => {
           </p>
         </motion.div>
 
-        <motion.div className="Service-card" variants={item}>
+        <motion.div className="Service-card" variants={container}>
           <MotionIcon
             icon={faChartColumn}
             className="service-icon"
@@ -89,7 +90,7 @@ const Service = () => {
           </p>
         </motion.div>
 
-        <motion.div className="Service-card" variants={item}>
+        <motion.div className="Service-card" variants={container}>
           <MotionIcon icon={faCode} className="service-icon" variants={item} />
           <h3>Software Solutions</h3>
           <p>

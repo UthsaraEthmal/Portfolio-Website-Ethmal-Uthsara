@@ -39,8 +39,8 @@
   display: flex;
 }
 .about-pic {
-  width: 400px;
-  height: 400px;
+  width: 450px;
+  height: 450px;
   border-radius: 50%;
   object-fit: cover;
   padding: 20px;
