@@ -193,4 +193,10 @@ p{
      .hero-main {
      height:auto
   }
+  /* 4. Large Devices (Tablets - Landscape / Small Laptops) */
+@media (min-width: 992px) and (max-width: 1199px) {
+  .hero-main {
+     height:auto
+  }
+}
 }

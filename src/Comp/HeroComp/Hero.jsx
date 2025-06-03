@@ -7,9 +7,7 @@ import {
   faEnvelope,
 } from "@fortawesome/free-solid-svg-icons";
 import {
-  faGithub,
-  faTwitter,
-  faFacebook,
+  faGithub,  
   faLinkedin,
   faInstagram,
 } from "@fortawesome/free-brands-svg-icons";
@@ -17,17 +15,44 @@ import { motion } from "framer-motion";
 import resume from "../../assets/EuB.pdf";
 import { Link } from "react-router-dom";
 
+
+// Animation Variants
+const container = {
+  hidden: { opacity: 0 },
+  show: {
+    opacity: 1,
+    transition: {
+      staggerChildren: 0.2,
+      delayChildren: 0.3,
+    },
+  },
+};
+
+const item = {
+  hidden: { opacity: 0, y: -40 },
+  show: {
+    opacity: 1,
+    y: 0,
+    transition: { duration: 0.6, ease: "easeOut" },
+  },
+};
+
+
 const Hero = () => {
   return (
-    <div className="hero-main">
-      <div className="hero-sub-main">
-        <motion.h1>Ethmal Uthsara Bopearachchi</motion.h1>
-        <h2>Software Engineer</h2>
-        <p><i>
+    <motion.div className="hero-main" variants={container}
+      initial="hidden"
+      animate="show">
+      <motion.div className="hero-sub-main" variants={container}>
+        <motion.h1 variants={item}>Ethmal Uthsara Bopearachchi</motion.h1>
+        <motion.h2 variants={item}>Software Engineer</motion.h2>
+        <motion.p variants={item}><i>
           A software engineer crafting reliable, scalable, and user-focused
           digital experiences.</i>
-        </p>
-        <div className="button-section">
+        </motion.p>
+
+
+        <motion.div className="button-section" variants={item}>
           <a
             href={resume}
             download="Ethmal_Uthsara-CV"
@@ -39,8 +64,10 @@ const Hero = () => {
           <Link to="/contact">
             <div className="btndiv">Contact</div>
           </Link>
-        </div>
-        <div className="social-icons">
+        </motion.div>
+
+
+        <motion.div className="social-icons" variants={item}>
           <a href="https://github.com/UthsaraEthmal" target="_blank" rel="noopener noreferrer">
     <div className="iconclass">
       <FontAwesomeIcon icon={faGithub} className="icon" />
@@ -56,9 +83,9 @@ const Hero = () => {
       <FontAwesomeIcon icon={faLinkedin} className="icon" />
     </div>
   </a>
-        </div>
-      </div>
-    </div>
+        </motion.div>
+      </motion.div>
+    </motion.div>
   );
 };
 
