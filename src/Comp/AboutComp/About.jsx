@@ -2,6 +2,30 @@ import React from "react";
 import "./About.css";
 import AboutPic from "../../assets/blue.webp";
 import {Link}from 'react-router-dom'
+import { motion } from "framer-motion";
+
+
+
+// Animation Variants
+const container = {
+  hidden: { opacity: 0 },
+  show: {
+    opacity: 1,
+    transition: {
+      staggerChildren: 0.2,
+      delayChildren: 0.3,
+    },
+  },
+};
+
+const item = {
+  hidden: { opacity: 0, y: -40 },
+  show: {
+    opacity: 1,
+    y: 0,
+    transition: { duration: 0.6, ease: "easeOut" },
+  },
+};
 
 
 const About = () => {
@@ -10,18 +34,20 @@ const About = () => {
 
   return (
     
-    <div className="about-main">
+    <motion.div className="about-main"  variants={container}
+      initial="hidden"
+      animate="show">
       
-      <div className="about-sub-main">
-        <div className="about-heading">
+      <motion.div className="about-sub-main" variants={container}>
+        <motion.div className="about-heading" variants={item}>
           <h1>About Me</h1>
-        </div>
-        <div className="about-content" >
+        </motion.div>
+        <motion.div className="about-content" >
          
-            <div className="about-content-img" >
+            <div className="about-content-img" variants={item} >
             <img src={AboutPic} className="about-pic" alt="AboutPic" />
           </div>
-          <div className="about-content-details">
+          <motion.div className="about-content-details" variants={item}>
             <p>
               {" "}
               I’m a passionate Software Engineering undergraduate at the
@@ -36,10 +62,10 @@ const About = () => {
     Contact
   </div>
 </Link>
-          </div>
-        </div>
-      </div>
-    </div>
+          </motion.div>
+        </motion.div>
+      </motion.div>
+    </motion.div>
   );
 };
 
