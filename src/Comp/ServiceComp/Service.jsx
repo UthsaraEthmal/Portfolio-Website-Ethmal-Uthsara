@@ -8,6 +8,7 @@ import {  faHouse,
   faMobileScreen,
   faChartColumn,
   faCode
+  
 } from "@fortawesome/free-solid-svg-icons";
 import { FaLaptopCode } from "react-icons/fa6";
 import { motion } from "framer-motion";
