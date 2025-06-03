@@ -1,24 +1,19 @@
 .hero-main {
-   margin-top: 50px;
-    height: 100vh;  
-    justify-content: space-between; 
-    padding: 120px;  
-   background-image: radial-gradient(
-  125% 125% at 50% 0%,
-  #000000 0%,       
-  #041562 35%,      
-  #DA1212 70%,       
-  #000000 100%      
-);
-    background-size: 100% 120%;
+  margin-top: 50px;
+  height: 100vh;
+  justify-content: space-between;
+  padding: 120px;
+  background-image: radial-gradient(
+    125% 125% at 50% 0%,
+    #000000 0%,
+    #041562 35%,
+    #da1212 70%,
+    #000000 100%
+  );
+  background-size: 100% 120%;
   animation: moveRadial 6s ease-in-out infinite;
   /*border: 2px solid rgba(255, 255, 255, 0.2);*/
-  
 }
-
-
-
-
 
 @keyframes moveRadial {
   0% {
@@ -31,13 +26,11 @@
     background-position: 50% 0%;
   }
 }
-    
+
 /*
   border-bottom: 5px solid rgba(255, 255, 255, 0.2);*/
 
-
-  
-.hero-sub-main{
+.hero-sub-main {
   height: 90vh;
   display: flex;
   flex-direction: column;
@@ -45,30 +38,27 @@
   justify-content: center;
   text-align: center;
 }
-.hero-sub-main h1{
+.hero-sub-main h1 {
   font-size: 70px;
 }
 
-.hero-sub-main h2{
+.hero-sub-main h2 {
   font-size: 30px;
   margin: 20px;
-  
 }
-i{
-   font-family: "Montserrat", sans-serif;
+i {
+  font-family: "Montserrat", sans-serif;
   font-weight: 400;
   font-style: normal;
- 
 }
 
-.button-section{
- 
-   align-items: center;
-   margin-top: 30px;
-   display: flex;
+.button-section {
+  align-items: center;
+  margin-top: 30px;
+  display: flex;
 }
-.btndiv{
-width: 200px;
+.btndiv {
+  width: 200px;
   height: 50px;
   background: rgba(255, 255, 255, 0.1);
   border: 2px solid rgba(255, 255, 255, 0.2);
@@ -83,7 +73,7 @@ width: 200px;
   font-weight: 600;
   color: white;
   margin: 10px;
-  
+
   /* Add smooth transition for transform */
   transition: transform 0.3s ease;
 }
@@ -110,12 +100,9 @@ width: 200px;
   transform: scaleX(1);
 }
 
-
-
 .icon {
   font-size: 24px; /* Adjust icon size */
   color: white;
-  
 }
 
 .iconclass {
@@ -128,11 +115,10 @@ width: 200px;
   justify-content: center;
   width: 45px;
   height: 45px;
-   box-shadow: 0 4px 8px black;
-  
+  box-shadow: 0 4px 8px black;
 }
 
-.iconclass:hover{
+.iconclass:hover {
   animation: animatec 1.5s ease-in-out infinite;
   transition: border 0.3s ease;
 }
@@ -158,45 +144,42 @@ width: 200px;
 /* 1. Extra Small Devices (Phones - Portrait) */
 @media (max-width: 479px) {
   .hero-main {
-     height:auto
+    height: auto;
   }
-.hero-sub-main h1{
-  font-size: 35px;
-}
+  .hero-sub-main h1 {
+    font-size: 35px;
+  }
 
-.hero-sub-main h2{
-  font-size: 20px;
-  
-}
+  .hero-sub-main h2 {
+    font-size: 20px;
+  }
 
-  .button-section{ 
-  flex-direction: column;
-  margin: 30px;
-  
-}
- .about-contact-btn {
-  margin-right: 20px; /* Adds space to the right */
-}
-p{
-  font-size: 15px;
-
-}
+  .button-section {
+    flex-direction: column;
+    margin: 30px;
+  }
+  .about-contact-btn {
+    margin-right: 20px; /* Adds space to the right */
+  }
+  p {
+    font-size: 15px;
+  }
 }
 /* 2. Small Devices (Phones - Portrait and Landscape) */
 @media (min-width: 480px) and (max-width: 767px) {
-   .hero-main {
-     height:auto
+  .hero-main {
+    height: auto;
   }
 }
 /* 3. Medium Devices (Tablets - Portrait) */
 @media (min-width: 768px) and (max-width: 991px) {
-     .hero-main {
-     height:auto
+  .hero-main {
+    height: auto;
   }
   /* 4. Large Devices (Tablets - Landscape / Small Laptops) */
-@media (min-width: 992px) and (max-width: 1199px) {
-  .hero-main {
-     height:auto
+  @media (min-width: 992px) and (max-width: 1199px) {
+    .hero-main {
+      height: auto;
+    }
   }
-}
 }

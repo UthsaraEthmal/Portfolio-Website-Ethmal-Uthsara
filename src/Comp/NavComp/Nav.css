@@ -10,11 +10,10 @@ header {
   align-items: center;
   z-index: 100;
   background: rgba(255, 255, 255, 0.1);
- 
 }
 
 .header-bg {
-  background-image: linear-gradient(43deg, #041562 20%,  #DA1212 100%);;
+  background-image: linear-gradient(43deg, #041562 20%, #da1212 100%);
 }
 
 .logo {
@@ -22,7 +21,6 @@ header {
   font-size: 32px;
   font-weight: 700;
 }
-
 
 .nav-bar a {
   position: relative;
@@ -32,7 +30,7 @@ header {
   text-decoration: none;
   color: white;
   display: inline-block; /* ensures width = text only */
-  padding-bottom: 2px;    /* space for underline */
+  padding-bottom: 2px; /* space for underline */
 }
 
 .nav-bar a::after {
@@ -42,7 +40,7 @@ header {
   left: 0;
   height: 3px;
   width: 0;
-   height: 2px;
+  height: 2px;
   background: #fff; /* customize color if needed */
   transition: width 0.3s ease;
 }
@@ -51,10 +49,6 @@ header {
 .nav-bar a.active::after {
   width: 100%;
 }
-
-
-
-
 
 .nav-contact {
   background: rgba(255, 255, 255, 0.1);
@@ -121,11 +115,9 @@ header {
   }
 }
 @media (min-width: 768px) and (max-width: 991px) {
-    .header {
-
-  padding: 20px 5%; /* ⬅️ Increase from 5px to 20px for more vertical space */
-
-}
+  .header {
+    padding: 20px 5%; /* ⬅️ Increase from 5px to 20px for more vertical space */
+  }
   .logo {
     font-size: 20px;
     font-weight: 600;
@@ -136,11 +128,9 @@ header {
   }
 }
 @media (min-width: 992px) and (max-width: 1199px) {
-        .header {
-
-  padding: 20px 5%; /* ⬅️ Increase from 5px to 20px for more vertical space */
-
-}
+  .header {
+    padding: 20px 5%; /* ⬅️ Increase from 5px to 20px for more vertical space */
+  }
   .logo {
     font-size: 25px;
     font-weight: 600;

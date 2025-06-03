@@ -1,7 +1,7 @@
 .Service-main {
   margin-top: 50px;
   height: auto;
- /* background-image: radial-gradient(125% 125% at 50% 0%, #020617 50%, #00abf0);*/
+  /* background-image: radial-gradient(125% 125% at 50% 0%, #020617 50%, #00abf0);*/
 }
 
 .Service-sub-main-1 {
@@ -26,8 +26,8 @@
   width: 300px;
   height: 400px;
   margin: 10px;
-   background: rgba(255, 255, 255, 0.1);
-    border: 2px solid rgba(255, 255, 255, 0.2);
+  background: rgba(255, 255, 255, 0.1);
+  border: 2px solid rgba(255, 255, 255, 0.2);
   /*border-radius: 10px;*/
   border-top-left-radius: 45px;
   border-bottom-right-radius: 45px;
@@ -40,31 +40,28 @@
   justify-content: center;
   padding: 20px;
   box-sizing: border-box;
-transition: transform 0.3s ease;
+  transition: transform 0.3s ease;
 }
 .Service-card:hover {
   transform: translateY(-10px); /* Moves the card up by 10px */
   cursor: pointer; /* Optional, to show pointer on hover */
   border: 2px solid white;
   box-shadow: 0 4px 8px black;
- /* background: rgba(255, 255, 255, 0.2);*/
-
-  
+  /* background: rgba(255, 255, 255, 0.2);*/
 }
 
-.service-icon{
+.service-icon {
   justify-content: center;
-    margin: 10px;
-    padding: 15px;
-    border: 2px solid white;
-    font-size: 20px;
-    border-radius: 100px;
-    box-shadow: 0 4px 8px black
+  margin: 10px;
+  padding: 15px;
+  border: 2px solid white;
+  font-size: 20px;
+  border-radius: 100px;
+  box-shadow: 0 4px 8px black;
 }
 
-.Service-card h3{
+.Service-card h3 {
   padding: 25px;
- 
 }
 
 @media (min-width: 768px) and (max-width: 991px) {

@@ -1,10 +1,8 @@
 import React from "react";
 import "./About.css";
 import AboutPic from "../../assets/blue.webp";
-import {Link}from 'react-router-dom'
+import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
-
-
 
 // Animation Variants
 const container = {
@@ -27,24 +25,20 @@ const item = {
   },
 };
 
-
 const About = () => {
-
-
-
   return (
-    
-    <motion.div className="about-main"  variants={container}
+    <motion.div
+      className="about-main"
+      variants={container}
       initial="hidden"
-      animate="show">
-      
+      animate="show"
+    >
       <motion.div className="about-sub-main" variants={container}>
         <motion.div className="about-heading" variants={item}>
           <h1>About Me</h1>
         </motion.div>
-        <motion.div className="about-content" >
-         
-            <div className="about-content-img" variants={item} >
+        <motion.div className="about-content">
+          <div className="about-content-img" variants={item}>
             <img src={AboutPic} className="about-pic" alt="AboutPic" />
           </div>
           <motion.div className="about-content-details" variants={item}>
@@ -58,10 +52,8 @@ const About = () => {
               through creative projects and lifelong learning..
             </p>
             <Link to="/contact">
-  <div className="about-contact-btn">
-    Contact
-  </div>
-</Link>
+              <div className="about-contact-btn">Contact</div>
+            </Link>
           </motion.div>
         </motion.div>
       </motion.div>

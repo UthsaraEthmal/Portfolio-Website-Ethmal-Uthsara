@@ -1,19 +1,18 @@
 import React, { useState } from "react";
 import "./Service.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {  faHouse,
+import {
+  faHouse,
   faRibbon,
   faEnvelope,
   faLaptopCode,
   faMobileScreen,
   faChartColumn,
-  faCode
-  
+  faCode,
 } from "@fortawesome/free-solid-svg-icons";
 import { FaLaptopCode } from "react-icons/fa6";
 import { motion } from "framer-motion";
 const MotionIcon = motion(FontAwesomeIcon);
-
 
 // Animation Variants
 const container = {
@@ -36,30 +35,38 @@ const item = {
   },
 };
 
-
-
 const Service = () => {
   return (
-    <motion.div className="Service-main" variants={container}
+    <motion.div
+      className="Service-main"
+      variants={container}
       initial="hidden"
       animate="show"
-      viewport={{ once: true, amount: 0.2 }}>
+      viewport={{ once: true, amount: 0.2 }}
+    >
       <div className="Service-sub-main-1">
         <h1>Services</h1>
       </div>
-      <motion.div className="Service-sub-main-2"  variants={container} >
-
+      <motion.div className="Service-sub-main-2" variants={container}>
         <motion.div className="Service-card" variants={container}>
-          <MotionIcon icon={faLaptopCode} className="service-icon" variants={item} />
+          <MotionIcon
+            icon={faLaptopCode}
+            className="service-icon"
+            variants={item}
+          />
           <h3>Web Development</h3>
-                    <p>
+          <p>
             I create responsive, visually appealing, and user-friendly websites
             using HTML, CSS, JavaScript, React.js, and WordPress.
           </p>
         </motion.div>
 
         <motion.div className="Service-card" variants={item}>
-          <MotionIcon icon={faMobileScreen} className="service-icon" variants={item}/>
+          <MotionIcon
+            icon={faMobileScreen}
+            className="service-icon"
+            variants={item}
+          />
           <h3>Mobile App Development</h3>
           <p>
             Building cross-platform mobile applications using React Native,
@@ -69,7 +76,11 @@ const Service = () => {
         </motion.div>
 
         <motion.div className="Service-card" variants={item}>
-          <MotionIcon icon={faChartColumn} className="service-icon" variants={item}/>
+          <MotionIcon
+            icon={faChartColumn}
+            className="service-icon"
+            variants={item}
+          />
           <h3>ERP & BI Solutions</h3>
           <p>
             Hands-on experience working with Business Intelligence systems and
@@ -78,8 +89,8 @@ const Service = () => {
           </p>
         </motion.div>
 
-        <motion.div className="Service-card" variants={item} >
-          <MotionIcon icon={faCode} className="service-icon" variants={item}/>
+        <motion.div className="Service-card" variants={item}>
+          <MotionIcon icon={faCode} className="service-icon" variants={item} />
           <h3>Software Solutions</h3>
           <p>
             Designing and developing bespoke software tools like grade

@@ -1,12 +1,9 @@
-import React, { useState, useEffect } from 'react';
-import './Nav.css';
-import {Link,useLocation}from 'react-router-dom'
+import React, { useState, useEffect } from "react";
+import "./Nav.css";
+import { Link, useLocation } from "react-router-dom";
 const Nav = () => {
-
-const location = useLocation();
+  const location = useLocation();
   const currentPath = location.pathname;
-
-
 
   const [click, setClick] = useState(false);
   const [color, setColor] = useState(false);
@@ -22,13 +19,15 @@ const location = useLocation();
   };
 
   useEffect(() => {
-    window.addEventListener('scroll', changeColor);
-    return () => window.removeEventListener('scroll', changeColor);
+    window.addEventListener("scroll", changeColor);
+    return () => window.removeEventListener("scroll", changeColor);
   }, []);
 
   return (
-    <header className={color ? 'header header-bg' : 'header'}>
-      <a href="/" className="logo">Ethmal Uthsara</a>
+    <header className={color ? "header header-bg" : "header"}>
+      <a href="/" className="logo">
+        Ethmal Uthsara
+      </a>
 
       {/* Hamburger Menu */}
       <div className="hamburger" onClick={handleClick}>
@@ -36,16 +35,31 @@ const location = useLocation();
       </div>
 
       {/* Navigation Menu */}
-      <nav className={click ? 'nav-bar active' : 'nav-bar'}>
-        
-
-<Link to="/" className={currentPath === "/" ? "active" : ""}>Home</Link>
-      <Link to="/About" className={currentPath === "/About" ? "active" : ""}>About me</Link>
-      <Link to="/Service" className={currentPath === "/Service" ? "active" : ""}>Service</Link>
-      <Link to="/Projects" className={currentPath === "/Projects" ? "active" : ""}>Projects</Link>
-      <Link to="/Contact" className={currentPath === "/Contact" ? "active" : ""}>Contact me</Link>
-
-
+      <nav className={click ? "nav-bar active" : "nav-bar"}>
+        <Link to="/" className={currentPath === "/" ? "active" : ""}>
+          Home
+        </Link>
+        <Link to="/About" className={currentPath === "/About" ? "active" : ""}>
+          About me
+        </Link>
+        <Link
+          to="/Service"
+          className={currentPath === "/Service" ? "active" : ""}
+        >
+          Service
+        </Link>
+        <Link
+          to="/Projects"
+          className={currentPath === "/Projects" ? "active" : ""}
+        >
+          Projects
+        </Link>
+        <Link
+          to="/Contact"
+          className={currentPath === "/Contact" ? "active" : ""}
+        >
+          Contact me
+        </Link>
       </nav>
     </header>
   );

@@ -1,23 +1,21 @@
-*{
+* {
   padding: 0;
   margin: 0;
   color: white;
   font-family: "Poppins", sans-serif;
   box-sizing: border-box;
-  
 }
-body{
-background-image: radial-gradient(
-  125% 125% at 50% 0%,
-  #000000 0%,        
-  #041562 35%,       
-  #DA1212 75%,   
-  #000000 100%       
-);
+body {
+  background-image: radial-gradient(
+    125% 125% at 50% 0%,
+    #000000 0%,
+    #041562 35%,
+    #da1212 75%,
+    #000000 100%
+  );
 
-background-size: 100% 120%;
+  background-size: 100% 120%;
   animation: moveRadial-Main 6s ease-in-out infinite;
-
 
   /*background: #041562;
      /* background-image: radial-gradient(
@@ -27,7 +25,6 @@ background-size: 100% 120%;
   #DA1212 75%,   
   #000000 100%       
 )*/
-
 }
 
 @keyframes moveRadial-Main {
@@ -42,8 +39,6 @@ background-size: 100% 120%;
   }
 }
 
-
-
-a{
+a {
   text-decoration: none;
 }

@@ -1,18 +1,17 @@
 .about-main {
-   margin-top: 50px;
-   height: auto;
+  margin-top: 50px;
+  height: auto;
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 10px;
   /*background-image: radial-gradient(125% 125% at 50% 0%, #020617 50%, #B4B4B8);*/
   /*background-image: radial-gradient(circle, #00abf0 0%, #020617 100%);*/
-
 }
 .about-sub-main {
   height: 80vh;
   background: rgba(255, 255, 255, 0.1);
- 
+
   border: 2px solid rgba(255, 255, 255, 0.2);
   border-radius: 10px;
   align-items: center;
@@ -35,13 +34,9 @@
   font-size: 50px;
   position: relative;
   padding-top: 20px;
-
-
-
 }
 .about-content {
   display: flex;
-  
 }
 .about-pic {
   width: 400px;
@@ -85,7 +80,7 @@
   z-index: 1;
   font-weight: 600;
   color: white;
-  
+
   /* Add smooth transition for transform */
   transition: transform 0.3s ease;
 }
@@ -112,13 +107,6 @@
   transform: scaleX(1);
 }
 
-
-
-
-
-
-
-
 /* 1. Extra Small Devices (Phones - Portrait) */
 @media (max-width: 479px) {
   .about-sub-main {
@@ -130,11 +118,9 @@
     height: 200px;
   }
   .about-content-details {
-
-  justify-content: center;
-  align-items: center;
- 
-}
+    justify-content: center;
+    align-items: center;
+  }
   .about-content {
     flex-direction: column;
   }
@@ -179,7 +165,8 @@
 /* 4. Large Devices (Tablets - Landscape / Small Laptops) */
 @media (min-width: 992px) and (max-width: 1199px) {
   .about-main {
-   height: 100vh;}
+    height: 100vh;
+  }
   .about-sub-main {
     height: auto;
   }
@@ -190,8 +177,9 @@
 }
 /* 5. Extra Large Devices (Desktops) */
 @media (min-width: 1200px) and (max-width: 1399px) {
-    .about-main {
-   height: 100vh;}
+  .about-main {
+    height: 100vh;
+  }
   .about-sub-main {
     height: auto;
   }
