@@ -188,3 +188,9 @@ p{
      height:auto
   }
 }
+/* 3. Medium Devices (Tablets - Portrait) */
+@media (min-width: 768px) and (max-width: 991px) {
+     .hero-main {
+     height:auto
+  }
+}
