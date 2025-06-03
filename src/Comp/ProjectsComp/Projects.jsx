@@ -140,6 +140,21 @@ const Projects = () => {
               Explore
             </a>
           </div>
+           <div className="cardp">
+            <h3>Portfolio Web -Site</h3>
+            <p>
+             
+            </p>
+
+            <a
+              href=" "
+              target="_blank"
+              rel="noopener noreferrer"
+              className="project-btn"
+            >
+              Explore
+            </a>
+          </div>
         </Slider>
       </div>
     </div>

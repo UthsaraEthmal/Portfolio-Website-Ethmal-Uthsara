@@ -23,9 +23,9 @@ const Hero = () => {
       <div className="hero-sub-main">
         <motion.h1>Ethmal Uthsara Bopearachchi</motion.h1>
         <h2>Software Engineer</h2>
-        <p>
+        <p><i>
           A software engineer crafting reliable, scalable, and user-focused
-          digital experiences.
+          digital experiences.</i>
         </p>
         <div className="button-section">
           <a
