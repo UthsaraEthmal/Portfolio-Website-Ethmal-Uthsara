@@ -41,7 +41,8 @@ const Service = () => {
   return (
     <motion.div className="Service-main" variants={container}
       initial="hidden"
-      animate="show">
+      animate="show"
+      viewport={{ once: true, amount: 0.2 }}>
       <div className="Service-sub-main-1">
         <h1>Services</h1>
       </div>

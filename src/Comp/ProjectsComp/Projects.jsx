@@ -143,7 +143,7 @@ const Projects = () => {
            <div className="cardp">
             <h3>Portfolio Web -Site</h3>
             <p>
-             
+             "Ethmal_Uthsara" is a personal portfolio website built using React.js, HTML, CSS, and JavaScript. It features responsive design, interactive content, smooth animations, and downloadable resources.
             </p>
 
             <a
