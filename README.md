@@ -1,3 +1,4 @@
+This is my fully responsive personal portfolio website built with React, designed to showcase my skills and projects as a Software Engineering undergraduate at the University of Westminster. It features a clean, mobile-friendly interface that adapts seamlessly to all screen sizes. The site highlights my expertise in web and mobile development, ERP and BI solutions, and custom software tools, offering a professional overview of my work, services, and contact information.
 # React + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
