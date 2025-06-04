@@ -65,6 +65,27 @@ header {
   z-index: 101;
 }
 
+.close-btn {
+  display: none;
+  font-size: 28px;
+   background: rgba(255, 255, 255, 0.1);
+     border-radius: 50%;
+  cursor: pointer;
+  align-self: flex-end;
+    justify-content: center;
+      width: 45px;
+  height: 45px;
+  margin-bottom: 10px;
+ 
+   box-shadow: 0 4px 8px black;
+}
+
+@media (max-width: 768px) {
+  .close-btn {
+    display: block;
+  }
+}
+
 @media (max-width: 768px) {
   .hamburger {
     display: block;
@@ -94,6 +115,11 @@ header {
 }
 /* 1. Extra Small Devices (Phones - Portrait) */
 @media (max-width: 479px) {
+  header {
+ 
+  padding: 10px 5%;
+
+}
   .logo {
     font-size: 12px;
     font-weight: 500;
