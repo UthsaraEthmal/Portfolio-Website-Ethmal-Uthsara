@@ -1,0 +1,58 @@
+/* Main.css */
+
+.slider-wrapper {
+    
+  padding: 50px;
+  max-width: 100%;
+  overflow: hidden;
+  position: relative;
+   
+  
+}
+
+.outer-box {
+ background: rgba(255, 255, 255, 0.1);
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  padding: 10px;
+  border-radius: 20px;
+  text-align: center;
+  margin: 5px;
+  
+  height: 120px;
+  display: flex;
+  flex-direction: column;
+   align-items: center;  /* horizontally center */
+  justify-content: center;  /* vertically center */
+  box-shadow: 0 4px 8px rgb(0, 0, 0);
+}
+
+.icon-box {
+ margin: 10px;
+  
+  padding: 25px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 45px;
+  height: 45px;
+ box-shadow: 0 4px 8px black;
+
+  
+}
+
+.description {
+  font-size: 15px;
+ 
+}
+
+
+
+
+
+
+
+
+
+
+

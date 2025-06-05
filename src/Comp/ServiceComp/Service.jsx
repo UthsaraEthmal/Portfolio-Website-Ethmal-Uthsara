@@ -12,6 +12,7 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import { FaLaptopCode } from "react-icons/fa6";
 import { motion } from "framer-motion";
+import Skills from "./Skills";
 const MotionIcon = motion(FontAwesomeIcon);
 
 // Animation Variants
@@ -98,7 +99,9 @@ const Service = () => {
             calculators, ticket systems, and puzzle games with Java and Python.
           </p>
         </motion.div>
+         <Skills/>
       </motion.div>
+     
     </motion.div>
   );
 };
