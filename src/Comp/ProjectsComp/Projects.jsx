@@ -3,6 +3,29 @@ import "./Projects.css"; // Ensure this is the correct path
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import { motion } from "framer-motion";
+
+// Animation Variants
+const container = {
+  hidden: { opacity: 0 },
+  show: {
+    opacity: 1,
+    transition: {
+      staggerChildren: 0.1,
+      delayChildren: 0.2,
+    },
+  },
+};
+
+const item = {
+  hidden: { opacity: 0, y: -40 },
+  show: {
+    opacity: 1,
+    y: 0,
+    transition: { duration: 0.5, ease: "easeOut" },
+  },
+};
+
 
 const Projects = () => {
   var settings = {
@@ -28,13 +51,15 @@ const Projects = () => {
 
   return (
     <div className="outer-loop">
-      <div className="container">
+      <motion.div className="container" variants={container}
+      initial="hidden"
+      animate="show">
         <div className="contact-sub-main-2-heading">
           <h1>Projects</h1>
         </div>
-        <div className="slider-wrapper">
+        <motion.div className="slider-wrapper" variants={container}>
           <Slider {...settings}>
-            <div className="cardp">
+            <motion.div className="cardp" variants={item}>
               <h3>University Grade Calculator</h3>
               <p>
                 A Python script that calculates university grades via command
@@ -51,8 +76,8 @@ const Projects = () => {
               >
                 Explore
               </a>
-            </div>
-            <div className="cardp">
+            </motion.div>
+            <motion.div className="cardp" variants={item}>
               <h3 className="projectstyleh1">Theatre Tickets Booking System</h3>
               <p>
                 A Java-based Theatre Tickets Booking System manages ticket
@@ -68,8 +93,8 @@ const Projects = () => {
               >
                 Explore
               </a>
-            </div>
-            <div className="cardp">
+            </motion.div>
+            <motion.div className="cardp" variants={item}>
               <h3> AutoInsight Pro(group project)</h3>
               <p>
                 AutoInsight Pro" is a mobile-based software application that
@@ -86,8 +111,8 @@ const Projects = () => {
               >
                 Explore
               </a>
-            </div>
-            <div className="cardp">
+            </motion.div>
+            <motion.div className="cardp" variants={item}>
               <h3> Online Shopping Managing System</h3>
               <p>
                 An online shopping management system, developed in Java,
@@ -104,8 +129,8 @@ const Projects = () => {
               >
                 Explore
               </a>
-            </div>
-            <div className="cardp">
+            </motion.div>
+            <motion.div className="cardp" variants={item}>
               <h3> "SnakeHub" Web Page (group project)</h3>
               <p>
                 "SnakeHub" is an educational website created using HTML, CSS,
@@ -122,8 +147,8 @@ const Projects = () => {
               >
                 Explore
               </a>
-            </div>
-            <div className="cardp">
+            </motion.div>
+            <motion.div className="cardp" variants={item}>
               <h3>Sliding Puzzles</h3>
               <p>
                 Puzzle game designed to find the shortest path between the
@@ -139,8 +164,8 @@ const Projects = () => {
               >
                 Explore
               </a>
-            </div>
-            <div className="cardp">
+            </motion.div>
+            <motion.div className="cardp" variants={item}>
               <h3>Portfolio Web -Site</h3>
               <p>
                 "Ethmal_Uthsara" is a personal portfolio website built using
@@ -157,10 +182,10 @@ const Projects = () => {
               >
                 Explore
               </a>
-            </div>
+            </motion.div>
           </Slider>
-        </div>
-      </div>
+        </motion.div>
+      </motion.div>
     </div>
   );
 };
