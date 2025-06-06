@@ -144,42 +144,63 @@ i {
 /* 1. Extra Small Devices (Phones - Portrait) */
 @media (max-width: 479px) {
   .hero-main {
+    padding: 60px;
     height: auto;
+    margin-top: 10px;
   }
   .hero-sub-main h1 {
     font-size: 35px;
   }
 
   .hero-sub-main h2 {
-    font-size: 20px;
+    font-size: 19px;
   }
 
   .button-section {
     flex-direction: column;
-    margin: 30px;
+    margin: 5px;
   }
   .about-contact-btn {
     margin-right: 20px; /* Adds space to the right */
   }
-  p {
+  i {
     font-size: 15px;
   }
+  .iconclass {
+      padding: 0px;}
 }
 /* 2. Small Devices (Phones - Portrait and Landscape) */
 @media (min-width: 480px) and (max-width: 767px) {
   .hero-main {
+     padding: 20px;
     height: auto;
+  }
+   .hero-sub-main h1 {
+    font-size: 60px;
   }
 }
 /* 3. Medium Devices (Tablets - Portrait) */
 @media (min-width: 768px) and (max-width: 991px) {
   .hero-main {
+     padding: 20px;
     height: auto;
   }
+
+ 
   /* 4. Large Devices (Tablets - Landscape / Small Laptops) */
   @media (min-width: 992px) and (max-width: 1199px) {
     .hero-main {
+      margin-top:0px;
+       padding: 0px;
       height: auto;
+      
     }
+  .iconclass {
+      padding-bottom: 10px;}
+
+    
   }
+  @media (min-width: 1200px) and (max-width: 1399px) {
+
+   }
 }
