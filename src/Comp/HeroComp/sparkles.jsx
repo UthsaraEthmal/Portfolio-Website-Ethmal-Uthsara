@@ -68,7 +68,7 @@ export function Sparkles({
     },
     particles: {
       color: {
-        value: ['#041562', '#DA1212'],
+        value: ['#041562', '#21b4b4'],
       },
       move: {
         enable: true,
