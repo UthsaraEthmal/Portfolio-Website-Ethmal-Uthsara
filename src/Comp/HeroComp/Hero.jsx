@@ -14,6 +14,7 @@ import {
 import { motion } from "framer-motion";
 import resume from "../../assets/EuB.pdf";
 import { Link } from "react-router-dom";
+import { Sparkles } from './sparkles';
 
 // Animation Variants
 const container = {
@@ -43,7 +44,19 @@ const Hero = () => {
       variants={container}
       initial="hidden"
       animate="show"
-    >
+    >       
+
+
+
+       {/* Sparkles as fullscreen background */}
+      <div className="sparkles-fullscreen">
+        <Sparkles
+          density={50} // reduced number of sparkles
+          mousemove={true}
+          color={['#ff0000', '#0000ff']} // multiple colors: red & blue
+          className="sparkles"
+        />
+      </div>
       <motion.div className="hero-sub-main" variants={container}>
         <motion.h1 variants={item}>Ethmal Uthsara Bopearachchi</motion.h1>
         <motion.h2 variants={item}>Software Engineer</motion.h2>
@@ -97,7 +110,9 @@ const Hero = () => {
             </div>
           </a>
         </motion.div>
+        
       </motion.div>
+    
     </motion.div>
   );
 };
