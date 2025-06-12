@@ -139,13 +139,13 @@ i {
 
 @keyframes animatec {
   0% {
-    box-shadow: 0 0 0 0 rgba(218, 18, 18, 0.6); /* Red start */
+    box-shadow: 0 0 0 0 #21b4b4 ; /* Red start */
   }
   50% {
-    box-shadow: 0 0 5px 10px rgba(218, 18, 18, 0.3); /* Red glow */
+    box-shadow: 0 0 5px 7px  rgba(101, 137, 142, 0.6); /* Red glow */
   }
   100% {
-    box-shadow: 0 0 0 0 rgba(218, 18, 18, 0); /* Fully transparent */
+    box-shadow: 0 0 0 0 rgba(33, 150, 243, 0); /* Fully transparent */
   }
 }
 
