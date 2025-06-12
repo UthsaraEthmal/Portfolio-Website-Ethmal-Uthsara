@@ -43,8 +43,11 @@
   height: 450px;
   border-radius: 50%;
   object-fit: cover;
-  padding: 20px;
+  margin: 20px;
 }
+
+.about-pic:hover{box-shadow: 0 0 30px 10px rgba(5, 5, 5, 0.7); }
+
 .about-content-details {
   flex: 1;
   display: flex;
@@ -142,9 +145,14 @@
     width: 380px;
     height: 380px;
   }
+    .about-content-details {
+    justify-content: center;
+    align-items: center;
+  }
   .about-content {
     flex-direction: column;
   }
+
   .about-contact-btn {
     margin: 0 auto; /* Centers the button */
   }
@@ -157,6 +165,10 @@
   }
   .about-content {
     flex-direction: column;
+  }
+      .about-content-details {
+    justify-content: center;
+    align-items: center;
   }
   .about-contact-btn {
     margin: 0 auto; /* Centers the button */
@@ -174,6 +186,8 @@
   .about-contact-btn {
     margin: 0 auto; /* Centers the button */
   }
+
+  
 }
 /* 5. Extra Large Devices (Desktops) */
 @media (min-width: 1200px) and (max-width: 1399px) {
