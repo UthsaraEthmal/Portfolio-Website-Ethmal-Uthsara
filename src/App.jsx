@@ -8,6 +8,7 @@ import Nav from "./Comp/NavComp/Nav";
 import Footer from "./Comp/FooterComp/Footer";
 import { Routes, Route } from "react-router-dom";
 import HomePage from "./Comp/HomePageComp/HomePage";
+import { Sparkles } from "./Comp/HeroComp/sparkles";
 
 const App = () => {
   return (
@@ -15,6 +16,8 @@ const App = () => {
       <Nav />
 
       <Routes>
+      
+       
         <Route path="/" element={<HomePage />} />
         <Route path="/About" element={<About />} />
         <Route path="/Service" element={<Service />} />
