@@ -46,7 +46,7 @@
 }
 .contact-sub-main-2-heading h1 {
   font-size: 50px;
-
+text-align: center;
   position: relative;
   padding-top: 20px;
 }
@@ -133,7 +133,7 @@
   }
 }
 
-/* 1. Extra Small Devices (Phones - Portrait) */
+
 @media (max-width: 767px) {
   .contact-main-2 {
     width: 80%;
@@ -144,7 +144,7 @@
 
   .contact-card {
     width: 300px;
-    height: auto; /* Optional: lets it grow naturally */
+    height: auto; /* to grow naturally */
   }
 }
 /* 1. Extra Small Devices (Phones - Portrait) */
@@ -160,5 +160,9 @@
   .contact-card {
     width: 230px;
     height: 200px;
+     
+  }
+  .contact-card p{
+    font-size: 14.2px;
   }
 }
