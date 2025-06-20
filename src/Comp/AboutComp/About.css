@@ -206,11 +206,15 @@
   .about-content-img {
     margin-top: -90px;
   }
-   .about-heading{
+   /*.about-heading{
     width: 30%;
     margin-left: 50%;
-   }
+   }*/
+
   .about-heading h1 {
-    left: 60px;
+    left: 120px;
   }
+  .about-pic {
+ margin-bottom: 30px;
+}
 }
