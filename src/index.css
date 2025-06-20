@@ -13,7 +13,8 @@ body {
     #21b4b4  75%,
     #000000 100%
   );
-
+  
+cursor: none;
   background-size: 100% 120%;
   animation: moveRadial-Main 6s ease-in-out infinite;
 

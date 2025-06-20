@@ -44,6 +44,7 @@ const Contact = () => {
         </div>
         <motion.div className="contact-sub-main-2-content" variants={container}>
           <motion.div className="contact-card" variants={item}>
+            
             <motion.div className="contact-details"  variants={item}>
               <FontAwesomeIcon icon={faLocationDot} className="iconP" />
               <h3>Address</h3>

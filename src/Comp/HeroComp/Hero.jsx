@@ -15,6 +15,7 @@ import { motion } from "framer-motion";
 import resume from "../../assets/EuB.pdf";
 import { Link } from "react-router-dom";
 import { Sparkles } from './sparkles';
+import  { useState, useEffect } from "react";
 
 // Animation Variants
 const container = {
@@ -38,6 +39,23 @@ const item = {
 };
 
 const Hero = () => {
+
+const [sparkleSize, setSparkleSize] = useState(3);
+useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth > 1024) {
+        setSparkleSize(5); // for large screens
+      } else {
+        setSparkleSize(3); // for small screens
+      }
+    };
+
+    handleResize(); // call once on mount
+    window.addEventListener("resize", handleResize);
+ return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
+
   return (
     <motion.div
       className="hero-main"
@@ -51,6 +69,7 @@ const Hero = () => {
        {/* Sparkles as fullscreen background */}
       <div className="sparkles-fullscreen">
         <Sparkles
+        size={sparkleSize}
           density={50} // reduced number of sparkles
           mousemove={true}
           color={['#ff0000', '#0000ff']} // multiple colors: red & blue
