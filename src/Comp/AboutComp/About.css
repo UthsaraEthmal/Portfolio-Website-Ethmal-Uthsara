@@ -45,6 +45,7 @@
   object-fit: cover;
   margin: 20px;
   box-shadow: 0 4px 15px black;
+  transition: all 0.3s ease-in-out; 
 }
 
 .about-pic:hover{/* box-shadow: 0 0 30px 10px rgba(143, 148, 148, 0.7);*/
@@ -206,15 +207,13 @@
   .about-content-img {
     margin-top: -90px;
   }
-   /*.about-heading{
-    width: 30%;
-    margin-left: 50%;
-   }*/
+   .about-heading{
+    
+    align-items: flex-end;
+   }
 
   .about-heading h1 {
     left: 120px;
   }
-  .about-pic {
- margin-bottom: 30px;
-}
+
 }
