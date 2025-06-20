@@ -210,7 +210,7 @@
     width: 30%;
     margin-left: 50%;
    }
-  /*.about-heading h1 {
-    left: 120px;
-  }*/
+  .about-heading h1 {
+    left: 60px;
+  }
 }
