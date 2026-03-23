@@ -104,7 +104,6 @@ export default function SmoothFollower() {
       width: '40px',
       height: '40px',
       border: '2px solid #21b4b4',
-      
       borderRadius: '50%',
       transform: 'translate(-50%, -50%)',
       left: `${renderPos.border.x}px`,
