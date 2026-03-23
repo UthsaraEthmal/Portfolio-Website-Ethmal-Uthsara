@@ -70,18 +70,14 @@ const Contact = () => {
           </motion.div>
 
           <motion.div className="contact-card" variants={item}>
-            <a
-    href={resume}
-    download="Ethmal_Uthsara-CV"
-    style={{ textDecoration: "none", color: "inherit" }}
-  >
+        
             <motion.div className="contact-details"  variants={item}>
               <FontAwesomeIcon icon={faDownload} className="iconP" />
               <h3>Resume</h3>
             </motion.div>
-           
+           <a href={resume} download="Ethmal_Uthsara-CV" style={{ textDecoration: "none", color: "inherit" }} >
               <p>Download my resume</p>
-            </a>
+           </a>
           </motion.div>
         </motion.div>
       </motion.div>
