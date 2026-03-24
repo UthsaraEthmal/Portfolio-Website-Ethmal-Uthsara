@@ -18,7 +18,9 @@ import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import { Sparkles } from './sparkles';
 import  { useState, useEffect } from "react";
-const resume = new URL("../../assets/EuBV01.pdf", import.meta.url).href;
+//const resume = new URL("../../assets/EuBV01.pdf", import.meta.url).href;
+import resumeFile from "../../assets/EuBV01.pdf";
+const resume = resumeFile;
 // Animation Variants
 const container = {
   hidden: { opacity: 0 },
@@ -91,7 +93,7 @@ useEffect(() => {
         <motion.div className="button-section" variants={item}>
           <a
             href={resume}
-            download="Ethmal_Uthsara-CV"
+            download="Ethmal_Uthsara-CV.pdf"
             style={{ textDecoration: "none" }}
           >
             <div className="btndiv">Resume</div>
