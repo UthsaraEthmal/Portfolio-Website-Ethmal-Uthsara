@@ -12,13 +12,13 @@ import {
   faInstagram,
 } from "@fortawesome/free-brands-svg-icons";
 import { motion } from "framer-motion";
-import resume from "../../assets/EuB.pdf";
+//import resume from "../../assets/EuB.pdf";
 //import resume from "../../assets/Eub.pdf";
 
 import { Link } from "react-router-dom";
 import { Sparkles } from './sparkles';
 import  { useState, useEffect } from "react";
-
+const resume = new URL("../../assets/EuBV01.pdf", import.meta.url).href;
 // Animation Variants
 const container = {
   hidden: { opacity: 0 },

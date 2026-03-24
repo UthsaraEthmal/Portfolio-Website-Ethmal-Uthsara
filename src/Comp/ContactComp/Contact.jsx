@@ -7,9 +7,9 @@ import {
   faLocationDot,
   faDownload,
 } from "@fortawesome/free-solid-svg-icons";
-import resume from "../../assets/EuB.pdf";
+//import resume from "../../assets/EuB.pdf";
 import { motion } from "framer-motion";
-
+const resume = new URL("../../assets/EuBV01.pdf", import.meta.url).href;
 // Animation Variants
 const container = {
   hidden: { opacity: 0 },
@@ -75,7 +75,7 @@ const Contact = () => {
               <FontAwesomeIcon icon={faDownload} className="iconP" />
               <h3>Resume</h3>
             </motion.div>
-           <a href={resume} download="Ethmal_Uthsara-CV" style={{ textDecoration: "none", color: "inherit" }} >
+           <a href={resume} download="Ethmal_Uthsara-CV" >
               <p>Download my resume</p>
            </a>
           </motion.div>
